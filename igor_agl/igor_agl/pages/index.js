@@ -1,16 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import igor1 from '../public/igor1.png'
-import igor2 from '../public/igor2.png'
+import duascabecasigor from '../public/duascabecasigor.png'
 import profile from '../public/profile.png'
-
 import styles from '../styles/Home.module.css'
-// Import the FontAwesomeIcon component
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import the icons you need
-import {
-  faSearch
-  } from "@fortawesome/free-solid-svg-icons";
+import { Icon } from '@iconify/react';
+
+
 
 export default function Home() {
   return (
@@ -22,30 +17,25 @@ export default function Home() {
       </Head>      
 
       <main className={styles.main}>
-      <Image src= {igor1} width="225px" height="270" alt="Igor1" />
-      <Image src= {igor2} width="225px" height="270" alt="Igor2" />
 
-       <Image className={styles.image} src= {profile} alt="profile" />
+                 
+                  <Image className={styles.duascabecas} src= {duascabecasigor} alt="Banner_Igor" />
 
-        <h1 className={styles.barrio}>IGOR</h1>
 
-        
-        <ul>
-        <li><FontAwesomeIcon
-        icon={faSearch}
-        style={{ fontSize: 100, color: "white" }}
-      /></li>
-        <li><FontAwesomeIcon
-        icon={faSearch}
-        style={{ fontSize: 100, color: "white" }}
-      /></li>
-        <li><FontAwesomeIcon
-        icon={faSearch}
-        style={{ fontSize: 100, color: "white" }}
-      /></li>        
-       
-       
-      </ul> 
+                  <Image className={styles.profile} src= {profile} alt="profile" />
+                
+
+                  
+                    <h1 className={styles.barrio}>IGOR</h1>
+
+                    
+                    <ul>
+                    <li><Icon icon="la:instagram" /></li>
+                    <li><Icon icon="la:whatsapp" /></li>
+                    <li><Icon icon="la:youtube" /></li>        
+                  
+                  
+                  </ul> 
          
        
       </main>

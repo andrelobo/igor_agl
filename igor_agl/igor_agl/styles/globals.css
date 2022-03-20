@@ -13,7 +13,6 @@ body {
 
 ul {
   list-style-type: none;
-  font-size: xx-small;
   display: inline;
   margin: 0;
   padding: 0;
@@ -22,11 +21,13 @@ ul {
 
 li {
   float: left;
+  font-size: 100px;
+  font-weight: 300;
   
 }
 
 li a {
-  font-size: xx-small;
+  
   display: inline;
   padding: 8px;
   color: #fff;
