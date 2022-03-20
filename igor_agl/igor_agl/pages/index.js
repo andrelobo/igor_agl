@@ -5,7 +5,12 @@ import igor2 from '../public/igor2.png'
 import profile from '../public/profile.png'
 
 import styles from '../styles/Home.module.css'
-import whatsicon from '../components/whatsicon.js'
+// Import the FontAwesomeIcon component
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import the icons you need
+import {
+  faSearch
+  } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -17,28 +22,35 @@ export default function Home() {
       </Head>      
 
       <main className={styles.main}>
-      <Image src= {igor1} widht="225px" height="270" alt="Igor1" />
-      <Image src= {igor2} alt="Igor2" />
+      <Image src= {igor1} width="225px" height="270" alt="Igor1" />
+      <Image src= {igor2} width="225px" height="270" alt="Igor2" />
 
        <Image className={styles.image} src= {profile} alt="profile" />
 
         <h1 className={styles.barrio}>IGOR</h1>
 
-
+        
         <ul>
-        <li><a href="#">whats</a></li>
-        <li><a href="#">Instgram</a></li>
-        <li><a href="#">Youtube</a></li>
+        <li><FontAwesomeIcon
+        icon={faSearch}
+        style={{ fontSize: 100, color: "white" }}
+      /></li>
+        <li><FontAwesomeIcon
+        icon={faSearch}
+        style={{ fontSize: 100, color: "white" }}
+      /></li>
+        <li><FontAwesomeIcon
+        icon={faSearch}
+        style={{ fontSize: 100, color: "white" }}
+      /></li>        
+       
        
       </ul> 
-
-          
+         
        
-
-        
       </main>
 
-      <whatsicon />
+    
 
       <footer className={styles.footer}>
         <a
@@ -49,6 +61,8 @@ export default function Home() {
           
           <span className={styles.barrio}>
             <h2>R.U.A</h2>
+
+
           </span>
         </a>
       </footer>
