@@ -1,22 +1,21 @@
 {
   "name": "igor_agl",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Agregador de links do Igor",
+  "main": "index.js",
+  "repository": "https://github.com/andrelobo/igor_agl.git",
+  "author": "andrelobo <loboandre@hotmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "babel-plugin-macros": "^3.1.0",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@iconify/react": "^3.2.0",
-    "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0"
+    "next": "^10.0.7",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
+
+
 }
